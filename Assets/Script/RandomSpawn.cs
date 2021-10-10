@@ -10,10 +10,6 @@ public class RandomSpawn : MonoBehaviour
     public Transform Loc;
     public bool Spawn = true;
 
-    [SerializeField]
-    MonoBehaviour factory;
-    IFactory Factory { get { return factory as IFactory; } }
-
     // Update is called once per frame
     void Update()
     {
@@ -22,7 +18,7 @@ public class RandomSpawn : MonoBehaviour
 
         if (Spawn == true)
         {
-            //Instantiate(Box, Loc);
+            Instantiate(Box, Loc);
             Spawn = false;
             StartCoroutine(SpawnTrue());
             
@@ -33,7 +29,7 @@ public class RandomSpawn : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         int spawnBox = Random.Range(0, 1);
-        Factory.FactoryMethod(spawnBox);
+        //Factory.FactoryMethod(spawnBox);
         Spawn = true;
     }
 }

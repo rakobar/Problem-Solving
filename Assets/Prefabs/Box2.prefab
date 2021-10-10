@@ -81,7 +81,7 @@ PrefabInstance:
     - target: {fileID: 2079587015828172303, guid: d3172a49c94ebbd499d904f5a8e767a7,
         type: 3}
       propertyPath: BoxPointValue
-      value: -10
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3172a49c94ebbd499d904f5a8e767a7, type: 3}
