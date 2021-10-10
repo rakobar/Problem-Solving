@@ -18,20 +18,22 @@ public class RandomSpawn : MonoBehaviour
     void Update()
     {
         Loc = Pos[Random.Range(0, Pos.Length)];
-        //int spawnBox = Random.Range(0, 1);
+        
 
         if (Spawn == true)
         {
-            Instantiate(Box, Loc);
+            //Instantiate(Box, Loc);
             Spawn = false;
             StartCoroutine(SpawnTrue());
             
-            //Factory.FactoryMethod(spawnBox);
+            
         }
     }
     IEnumerator SpawnTrue()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
+        int spawnBox = Random.Range(0, 1);
+        Factory.FactoryMethod(spawnBox);
         Spawn = true;
     }
 }

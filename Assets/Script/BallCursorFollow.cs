@@ -21,4 +21,12 @@ public class BallCursorFollow : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(mousePos); // get area screen 
         transform.position = Vector2.MoveTowards(transform.position, mousePos, speed * Time.deltaTime); // agar bergerak mengikuti mouse
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }

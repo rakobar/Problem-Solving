@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6653606626669069193}
   - component: {fileID: 5675671957962314131}
   - component: {fileID: 5591869324555995767}
+  - component: {fileID: 2079587015828172303}
   m_Layer: 0
-  m_Name: Box
-  m_TagString: Untagged
+  m_Name: MasterBox
+  m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +91,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &2079587015828172303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6004303779728125405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbf0028d48c2a243a56410186af1290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxPointValue: 10
