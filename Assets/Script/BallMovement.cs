@@ -13,13 +13,12 @@ public class BallMovement : MonoBehaviour
     {
         RB = GetComponent<Rigidbody2D>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-    }
-    private void FixedUpdate()
-    {
+
+        // Move
         RB.MovePosition(RB.position + movement * speed * Time.fixedDeltaTime);
     }
 }
