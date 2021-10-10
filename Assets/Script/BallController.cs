@@ -5,6 +5,7 @@ public class BallController : MonoBehaviour
     // RigidBody Bola
     private Rigidbody2D RB;
 
+
     // Besaran gaya awal yang di berikan untuk mendorong bola
     public float xInitForce;
     public float yInitForce;
@@ -38,4 +39,6 @@ public class BallController : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         Restart();
     }
+
+
 }
